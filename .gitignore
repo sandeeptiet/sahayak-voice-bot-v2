@@ -1,1 +1,18 @@
 .env
+
+# Local settings and generated portal output
+.env.*
+!.env.example
+**/node_modules/
+**/dist/
+**/test-results/
+**/playwright-report/
+**/__pycache__/
+.DS_Store
+
+!.env.api.example
+.pytest_cache/
+
+.portal-config-*
+
+!.env.worker.example
