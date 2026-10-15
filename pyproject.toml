@@ -25,3 +25,9 @@ dependencies = [
 dev = [
     "pytest==9.1.1",
 ]
+eval = [
+    "deepeval==3.8.9",
+]
+voice = [
+    "sounddevice==0.5.5",
+]

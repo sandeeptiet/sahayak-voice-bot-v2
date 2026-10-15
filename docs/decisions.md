@@ -49,3 +49,28 @@
   Unique per-claim fencing token, bounded publish retries, receipt-before-delete
   and explicit retry/replay preserve at-least-once recovery. Preflighted tickets
   will require deliberate authorized re-dispatch in a later live-calling release.
+
+- 2026-10-15: User authorized implementation of the next Sahayak Agent increment.
+  Preserve the three component names. Local synthetic LangGraph RAG and Bulbul
+  REST synthesis added; no employee endpoint, ticket mutations or calls enabled.
+- Titan Text Embeddings V2 / S3 Vectors are the working RAG pilot after the Cohere
+  agreement payment failure. See rag-pilot-2026-10-15.md for resource IDs.
+- Bulbul v3, shubh and 24 kHz WAV are provisional live-test settings. Streaming
+  and final voice selection remain open. HTTP adapter uses documented language_code.
+- DeepEval 3.8.9 added as an optional pinned eval group. Explicit bounded Sarvam
+  judge, local reports, no platform upload; scores advisory pending calibration.
+
+### 15 October 2026 — recorded speech development increment
+- User authorized adding Saaras speech recognition to Sahayak Agent.
+- Pin saaras:v3 with transcribe mode provisionally; official REST API still
+  supports v3. Do not silently migrate to the newer default v4.
+- Start with explicit synthetic WAV inputs and single-turn replies. REST is a
+  compatibility step; selected streaming architecture remains required.
+- No microphone recording, telephony, ticket writes or production enablement.
+
+### 15 October 2026 — microphone development command
+- User authorized microphone input. Add optional pinned sounddevice 0.5.5 group.
+- Explicit Enter-to-start, 12-second default / 25-second maximum, one turn only.
+- Do not retain raw microphone audio; existing synthetic report retention applies.
+- Automatic local macOS playback occurs only after capture closes and reply saves.
+- No microphone was opened during automated implementation checks.

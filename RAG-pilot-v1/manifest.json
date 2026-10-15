@@ -1,0 +1,29 @@
+[
+  {
+    "document_id": "SAH-NET-001",
+    "version": "1.0",
+    "category": "network",
+    "file": "SAH-NET-001.pdf",
+    "sha256": "bf2e4e7e4101072e5b7b75062fcc0b30ef7eaa651a663d4efb66f72bec6285e5",
+    "status": "synthetic_pilot_draft",
+    "pages": 1
+  },
+  {
+    "document_id": "SAH-M365-001",
+    "version": "1.0",
+    "category": "microsoft_365",
+    "file": "SAH-M365-001.pdf",
+    "sha256": "b43beecc1a8cd873f8e86ee09543f46549c1c351c8c31f300cf990acea553989",
+    "status": "synthetic_pilot_draft",
+    "pages": 1
+  },
+  {
+    "document_id": "SAH-VPN-001",
+    "version": "1.0",
+    "category": "vpn",
+    "file": "SAH-VPN-001.pdf",
+    "sha256": "13aae8a19bda82078baabeb01ab2d48a102c73db7d3aad9950f6f93d02f5ad84",
+    "status": "synthetic_pilot_draft",
+    "pages": 1
+  }
+]

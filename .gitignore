@@ -16,3 +16,8 @@
 .portal-config-*
 
 !.env.worker.example
+
+# Sahayak Agent generated synthetic reports and audio
+/output/agent/
+/.deepeval/
+/.deepeval*

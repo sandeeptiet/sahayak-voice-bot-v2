@@ -132,3 +132,49 @@ request, zero due/exhausted events and no attention items. Calls remain disabled
 Core portal POC and queue preflight acceptance are complete. Conversational Agent,
 Voice Connect, real human handoff and full integration/reliability gates remain.
 See handover-2026-10-14.md for the next-session summary.
+
+
+## Sahayak Agent increment — 15 October 2026
+
+Implemented a synthetic local LangGraph retrieval/generation workflow, bounded
+Sarvam adapters, Bulbul v3 WAV synthesis and an optional DeepEval custom Sarvam
+judge. This remains part of Sahayak Agent, not an additional component.
+
+Verified live: fixed Hindi speech and an Outlook Hindi Retrieve -> Sarvam -> Bulbul
+run both produced structurally valid WAV files. Audio has not been subjectively
+reviewed. The generated reply correctly preserved the unresolved Outlook issue,
+but used unnecessary English jargon. DeepEval completed two judge requests on
+that saved response, returning grounding 0.9 and employee response 0.9. These
+same-provider advisory scores are not release approval; the judge missed jargon
+and made an inconsistent suggestion about an already-present confirmation question.
+
+Regression: 98 tests and 10 subtests pass with optional eval dependencies installed.
+The optional pytest rerunfailures plugin binds a local socket; in restricted
+sandboxes use `-p no:rerunfailures -p no:cacheprovider` for these offline tests.
+One initial judge adapter property mismatch was corrected and covered by tests.
+DeepEval dependencies emit Python 3.14 SyntaxWarnings; these did not block checks.
+
+Managed guardrails, authenticated context/tools, durable conversation memory,
+Saaras input, streaming/barge-in and Sahayak Voice Connect remain pending.
+No ticket changes, telephone calls or new AWS resources were made by this increment.
+See sahayak-agent.md for runnable commands and configuration. Existing user pilot
+files and private environment files were preserved. Changes are uncommitted.
+
+## Saaras recorded turn — 15 October 2026
+
+Added bounded multipart Saaras v3 recognition, WAV validation and voice-demo CLI.
+Verified one live synthetic Hindi question through STT, retrieval, chat and TTS.
+Result: output/agent/6cf9cf82-ba02-43e0-8f2c-a280d4523ce8.json and .wav.
+117 tests + 10 subtests pass, including malformed audio, invalid transcripts,
+redacted provider failures and prevention of downstream work after STT failure.
+Human speech/noise, microphone capture and continuous streaming are unverified.
+Remaining safety/tool/memory/hosting gates from the prior increment still apply.
+
+## Microphone command — 15 October 2026
+
+Added microphone-demo with explicit start, bounded capture, safe errors, Ctrl+C
+handling and macOS reply playback. Optional sounddevice/PortAudio import verified.
+128 tests and 10 subtests pass. Microphone capture is mocked in tests: permission,
+real voice and physical speaker output remain for user acceptance. No recording
+or extra model request was made during this increment. Continuous conversations,
+streaming and previously documented production gates remain pending.
